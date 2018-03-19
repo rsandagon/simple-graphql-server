@@ -4,3 +4,4 @@ dist
 .module-cache
 *.log*
 *.eslintrc
+.vscode
