@@ -1,21 +1,13 @@
-import {
-  graphqlExpress,
-  graphiqlExpress,
-} from 'graphql-server-express';
-import bodyParser from 'body-parser';
 import express from 'express';
+import webpack from 'webpack';
+import webpackMiddleware from 'webpack-dev-middleware';
+import webpackConfig from './webpack.config.js';
 
-import { schema } from './src/schema';
-const PORT = 4000;
+const app = express();
+app.use(webpackMiddleware(webpack(webpackConfig)));
 
-const server = express();
+app.get('/',(req,res) => {})
 
-server.use('/graphql', bodyParser.json(), graphqlExpress({
-  schema
-}));
-
-server.use('/graphiql', graphiqlExpress({
-  endpointURL: '/graphql'
-}));
-
-server.listen(PORT, () => console.log(`GraphQL Server is now running on http://localhost:${PORT}`));
+app.listen(4000, () => {
+    console.log('Listening');
+})
