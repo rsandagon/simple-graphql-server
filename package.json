@@ -7,7 +7,11 @@
     "type": "git",
     "url": "git+https://github.com/rsandagon/simple-graphql-server.git"
   },
-  "keywords": ["graphql","react","apollo"],
+  "keywords": [
+    "graphql",
+    "react",
+    "apollo"
+  ],
   "author": "Ryan Sandagon",
   "license": "MIT",
   "bugs": {
@@ -15,6 +19,7 @@
   },
   "homepage": "https://github.com/rsandagon/simple-graphql-server#readme",
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
@@ -29,7 +34,10 @@
     "webpack-livereload-plugin": "^2.1.1"
   },
   "dependencies": {
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.1"
   },
