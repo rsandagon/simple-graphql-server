@@ -2,7 +2,7 @@
   "name": "simple-graphql-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rsandagon/simple-graphql-server.git"
